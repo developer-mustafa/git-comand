@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: white; /* Text color */
+            padding: 20px;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            min-height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px; /* Adjust as needed */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            color: #ff629e; /* Lighter text for headings */
+            border-bottom: 1px solid #4a5568; /* Darker border bottom */
+            padding-bottom: 8px;
+            margin-top: 24px;
+        }
+
+        .category {
+            margin-bottom: 32px;
+        }
+
+        .command {
+            color: rgb(13, 191, 60); /* Red color for commands */
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .command:hover {
+            text-decoration: underline;
+        }
+
+        .description {
+            color: #cbd5e0; /* Light gray for descriptions */
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;color:#fdbd44;font-size: 1.4rem;">Git Commands by: <a href="https://mustafaofficial.netlify.app/"  target="_blank" style="color:rgb(11, 208, 208);text-decoration: dotted;">Mustafa Rahman</a></h1>
+
+        <div class="category">
+            <h2>Configuring Git</h2>
+
+            <div class="command" onclick="copyCommand('git config --global user.name &quot;Your Name&quot;')">git config --global user.name "Your Name"</div>
+            <p class="description">Set the user's name for all repositories.</p>
+
+            <div class="command" onclick="copyCommand('git config --global user.email &quot;your.email@example.com&quot;')">git config --global user.email "your.email@example.com"</div>
+            <p class="description">Set the user's email for all repositories.</p>
+        </div>
+
+        <!-- Other command categories omitted for brevity -->
+
+        <div class="category">
+            <h2>Configuring Git</h2>
+    
+            <div class="command" onclick="copyCommand('git config --global user.name &quot;Your Name&quot;')">git config --global user.name "Your Name"</div>
+            <p class="description">Set the user's name for all repositories.</p>
+    
+            <div class="command" onclick="copyCommand('git config --global user.email &quot;your.email@example.com&quot;')">git config --global user.email "your.email@example.com"</div>
+            <p class="description">Set the user's email for all repositories.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Basic Operations</h2>
+    
+            <div class="command" onclick="copyCommand('git init')">git init</div>
+            <p class="description">Initialize a new Git repository.</p>
+    
+            <div class="command" onclick="copyCommand('git clone &lt;repository-url&gt;')">git clone &lt;repository-url&gt;</div>
+            <p class="description">Clone an existing repository.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Working with Branches</h2>
+    
+            <div class="command" onclick="copyCommand('git branch')">git branch</div>
+            <p class="description">List all branches.</p>
+    
+            <div class="command" onclick="copyCommand('git branch &lt;new-branch-name&gt;')">git branch &lt;new-branch-name&gt;</div>
+            <p class="description">Create a new branch.</p>
+    
+            <div class="command" onclick="copyCommand('git checkout &lt;branch-name&gt;')">git checkout &lt;branch-name&gt;</div>
+            <p class="description">Switch to a branch.</p>
+    
+            <div class="command" onclick="copyCommand('git checkout -b &lt;new-branch-name&gt;')">git checkout -b &lt;new-branch-name&gt;</div>
+            <p class="description">Create and switch to a new branch.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Making Changes</h2>
+    
+            <div class="command" onclick="copyCommand('git status')">git status</div>
+            <p class="description">Check the status of the working directory.</p>
+    
+            <div class="command" onclick="copyCommand('git add &lt;file-or-directory&gt;')">git add &lt;file-or-directory&gt;</div>
+            <p class="description">Stage changes for commit.</p>
+    
+            <div class="command" onclick="copyCommand('git add .')">git add .</div>
+            <p class="description">Stage all changes in the working directory for commit.</p>
+    
+            <div class="command" onclick="copyCommand('git commit -m &quot;Your commit message&quot;')">git commit -m "Your commit message"</div>
+            <p class="description">Commit staged changes.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Viewing History</h2>
+    
+            <div class="command" onclick="copyCommand('git log')">git log</div>
+            <p class="description">Show commit history.</p>
+    
+            <div class="command" onclick="copyCommand('git log --oneline')">git log --oneline</div>
+            <p class="description">Show commit history with one-line summaries.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Pushing and Pulling Changes</h2>
+    
+            <div class="command" onclick="copyCommand('git push origin &lt;branch-name&gt;')">git push origin &lt;branch-name&gt;</div>
+            <p class="description">Push changes to a remote repository.</p>
+    
+            <div class="command" onclick="copyCommand('git pull origin &lt;branch-name&gt;')">git pull origin &lt;branch-name&gt;</div>
+            <p class="description">Pull changes from a remote repository.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Merging and Rebasing</h2>
+    
+            <div class="command" onclick="copyCommand('git merge &lt;branch-name&gt;')">git merge &lt;branch-name&gt;</div>
+            <p class="description">Merge a branch into your current branch.</p>
+    
+            <div class="command" onclick="copyCommand('git rebase &lt;branch-name&gt;')">git rebase &lt;branch-name&gt;</div>
+            <p class="description">Rebase your current branch onto another branch.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Handling Conflicts</h2>
+    
+            <div class="command" onclick="copyCommand('git add &lt;file-with-conflict&gt;')">git add &lt;file-with-conflict&gt;</div>
+            <p class="description">Mark conflicts as resolved.</p>
+    
+            <div class="command" onclick="copyCommand('git rebase --continue')">git rebase --continue</div>
+            <p class="description">Continue rebase after resolving conflicts.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Stashing Changes</h2>
+    
+            <div class="command" onclick="copyCommand('git stash')">git stash</div>
+            <p class="description">Stash uncommitted changes.</p>
+    
+            <div class="command" onclick="copyCommand('git stash apply')">git stash apply</div>
+            <p class="description">Apply stashed changes.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Collaborating with Remote Repositories</h2>
+    
+            <div class="command" onclick="copyCommand('git remote add &lt;remote-name&gt; &lt;repository-url&gt;')">git remote add &lt;remote-name&gt; &lt;repository-url&gt;</div>
+            <p class="description">Add a remote repository.</p>
+    
+            <div class="command" onclick="copyCommand('git remote -v')">git remote -v</div>
+            <p class="description">List remote repositories.</p>
+    
+            <div class="command" onclick="copyCommand('git fetch &lt;remote-name&gt;')">git fetch &lt;remote-name&gt;</div>
+            <p class="description">Fetch changes from a remote repository.</p>
+    
+            <div class="command" onclick="copyCommand('git push &lt;remote-name&gt; &lt;branch-name&gt;')">git push &lt;remote-name&gt; &lt;branch-name&gt;</div>
+            <p class="description">Push changes to a remote repository.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Viewing Differences</h2>
+    
+            <div class="command" onclick="copyCommand('git diff')">git diff</div>
+            <p class="description">Show differences between working directory and the index.</p>
+    
+            <div class="command" onclick="copyCommand('git diff --cached')">git diff --cached</div>
+            <p class="description">Show differences between the index and the last commit.</p>
+        </div>
+    
+        <div class="category">
+            <h2>Tags</h2>
+    
+            <div class="command" onclick="copyCommand('git tag &lt;tag-name&gt;')">git tag &lt;tag-name&gt;</div>
+            <p class="description">Create a new tag.</p>
+    
+            <div class="command" onclick="copyCommand('git push origin --tags')">git push origin --tags</div>
+            <p class="description">Push tags to the remote repository.</p>
+        </div>
+
+    </div>
+
+    <script>
+        function copyCommand(command) {
+            const el = document.createElement('textarea');
+            el.value = command.trim();
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('Copied to clipboard: ' + command);
+        }
+    </script>
+</body>
+</html>

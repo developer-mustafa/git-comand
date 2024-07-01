@@ -1,0 +1,137 @@
+   <div class="category">
+        <h2>Configuring Git</h2>
+
+        <div class="command" onclick="copyCommand('git config --global user.name &quot;Your Name&quot;')">git config --global user.name "Your Name"</div>
+        <p class="description">Set the user's name for all repositories.</p>
+
+        <div class="command" onclick="copyCommand('git config --global user.email &quot;your.email@example.com&quot;')">git config --global user.email "your.email@example.com"</div>
+        <p class="description">Set the user's email for all repositories.</p>
+    </div>
+
+    <div class="category">
+        <h2>Basic Operations</h2>
+
+        <div class="command" onclick="copyCommand('git init')">git init</div>
+        <p class="description">Initialize a new Git repository.</p>
+
+        <div class="command" onclick="copyCommand('git clone &lt;repository-url&gt;')">git clone &lt;repository-url&gt;</div>
+        <p class="description">Clone an existing repository.</p>
+    </div>
+
+    <div class="category">
+        <h2>Working with Branches</h2>
+
+        <div class="command" onclick="copyCommand('git branch')">git branch</div>
+        <p class="description">List all branches.</p>
+
+        <div class="command" onclick="copyCommand('git branch &lt;new-branch-name&gt;')">git branch &lt;new-branch-name&gt;</div>
+        <p class="description">Create a new branch.</p>
+
+        <div class="command" onclick="copyCommand('git checkout &lt;branch-name&gt;')">git checkout &lt;branch-name&gt;</div>
+        <p class="description">Switch to a branch.</p>
+
+        <div class="command" onclick="copyCommand('git checkout -b &lt;new-branch-name&gt;')">git checkout -b &lt;new-branch-name&gt;</div>
+        <p class="description">Create and switch to a new branch.</p>
+    </div>
+
+    <div class="category">
+        <h2>Making Changes</h2>
+
+        <div class="command" onclick="copyCommand('git status')">git status</div>
+        <p class="description">Check the status of the working directory.</p>
+
+        <div class="command" onclick="copyCommand('git add &lt;file-or-directory&gt;')">git add &lt;file-or-directory&gt;</div>
+        <p class="description">Stage changes for commit.</p>
+
+        <div class="command" onclick="copyCommand('git add .')">git add .</div>
+        <p class="description">Stage all changes in the working directory for commit.</p>
+
+        <div class="command" onclick="copyCommand('git commit -m &quot;Your commit message&quot;')">git commit -m "Your commit message"</div>
+        <p class="description">Commit staged changes.</p>
+    </div>
+
+    <div class="category">
+        <h2>Viewing History</h2>
+
+        <div class="command" onclick="copyCommand('git log')">git log</div>
+        <p class="description">Show commit history.</p>
+
+        <div class="command" onclick="copyCommand('git log --oneline')">git log --oneline</div>
+        <p class="description">Show commit history with one-line summaries.</p>
+    </div>
+
+    <div class="category">
+        <h2>Pushing and Pulling Changes</h2>
+
+        <div class="command" onclick="copyCommand('git push origin &lt;branch-name&gt;')">git push origin &lt;branch-name&gt;</div>
+        <p class="description">Push changes to a remote repository.</p>
+
+        <div class="command" onclick="copyCommand('git pull origin &lt;branch-name&gt;')">git pull origin &lt;branch-name&gt;</div>
+        <p class="description">Pull changes from a remote repository.</p>
+    </div>
+
+    <div class="category">
+        <h2>Merging and Rebasing</h2>
+
+        <div class="command" onclick="copyCommand('git merge &lt;branch-name&gt;')">git merge &lt;branch-name&gt;</div>
+        <p class="description">Merge a branch into your current branch.</p>
+
+        <div class="command" onclick="copyCommand('git rebase &lt;branch-name&gt;')">git rebase &lt;branch-name&gt;</div>
+        <p class="description">Rebase your current branch onto another branch.</p>
+    </div>
+
+    <div class="category">
+        <h2>Handling Conflicts</h2>
+
+        <div class="command" onclick="copyCommand('git add &lt;file-with-conflict&gt;')">git add &lt;file-with-conflict&gt;</div>
+        <p class="description">Mark conflicts as resolved.</p>
+
+        <div class="command" onclick="copyCommand('git rebase --continue')">git rebase --continue</div>
+        <p class="description">Continue rebase after resolving conflicts.</p>
+    </div>
+
+    <div class="category">
+        <h2>Stashing Changes</h2>
+
+        <div class="command" onclick="copyCommand('git stash')">git stash</div>
+        <p class="description">Stash uncommitted changes.</p>
+
+        <div class="command" onclick="copyCommand('git stash apply')">git stash apply</div>
+        <p class="description">Apply stashed changes.</p>
+    </div>
+
+    <div class="category">
+        <h2>Collaborating with Remote Repositories</h2>
+
+        <div class="command" onclick="copyCommand('git remote add &lt;remote-name&gt; &lt;repository-url&gt;')">git remote add &lt;remote-name&gt; &lt;repository-url&gt;</div>
+        <p class="description">Add a remote repository.</p>
+
+        <div class="command" onclick="copyCommand('git remote -v')">git remote -v</div>
+        <p class="description">List remote repositories.</p>
+
+        <div class="command" onclick="copyCommand('git fetch &lt;remote-name&gt;')">git fetch &lt;remote-name&gt;</div>
+        <p class="description">Fetch changes from a remote repository.</p>
+
+        <div class="command" onclick="copyCommand('git push &lt;remote-name&gt; &lt;branch-name&gt;')">git push &lt;remote-name&gt; &lt;branch-name&gt;</div>
+        <p class="description">Push changes to a remote repository.</p>
+    </div>
+
+    <div class="category">
+        <h2>Viewing Differences</h2>
+
+        <div class="command" onclick="copyCommand('git diff')">git diff</div>
+        <p class="description">Show differences between working directory and the index.</p>
+
+        <div class="command" onclick="copyCommand('git diff --cached')">git diff --cached</div>
+        <p class="description">Show differences between the index and the last commit.</p>
+    </div>
+
+    <div class="category">
+        <h2>Tags</h2>
+
+        <div class="command" onclick="copyCommand('git tag &lt;tag-name&gt;')">git tag &lt;tag-name&gt;</div>
+        <p class="description">Create a new tag.</p>
+
+        <div class="command" onclick="copyCommand('git push origin --tags')">git push origin --tags</div>
+        <p class="description">Push tags to the remote repository.</p>
+    </div>
