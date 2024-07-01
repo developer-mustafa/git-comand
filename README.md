@@ -1,22 +1,3 @@
-<style>
-body {
-    background-color: #15202B; /* Black background for the page */
-    color: white; /* White text for better contrast */
-    font-family: Arial, sans-serif; /* Example font */
-    line-height: 1.6; /* Improved readability */
-}
-
-.code-highlight {
-    background-color: #00C4A7; /* Light green background for commands */
-    color: black; /* Black text for commands */
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-.code-description {
-    color: white; /* White text for descriptions */
-}
-</style>
 
 ### Configuring Git
 - **<span class="code-highlight">`git config --global user.name "Your Name"`**</span>
